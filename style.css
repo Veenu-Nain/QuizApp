@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    background:linear-gradient(150deg,rgb(21, 21, 85),rgb(27, 197, 27));
+    padding:1rem;
+}
+.app{
+    width:40%;
+    margin:100px auto 0;
+    border-radius: 10px;
+    padding:2rem;
+    background-color: white;
+    color:rgb(14, 14, 47);
+}
+.app h1{
+    font-size: 2.3rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    padding-bottom:1rem;
+}
+
+#question{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+#answer-buttons{
+    display:flex;
+    flex-direction: column;
+}
+#answer-buttons button{
+    margin-bottom: 1rem;
+    height:3rem;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 1rem;
+    cursor:pointer;
+    transition: all 0.3s;
+}
+#answer-buttons button:hover:not([disabled]){
+    background-color: #222;
+    color:white;
+}
+#next-btn{
+    background-color: rgb(14, 14, 47);
+    color:white;
+    margin: 0.5rem auto 0;
+    padding:0.3rem;
+    width:30%;
+    height:2.5rem;
+    font-weight: 500;
+    border:0;
+    border-radius: 4px;
+    cursor:pointer;
+    display:none;
+    font-size: 1rem;
+}
+.correct{
+    background: #9aeabc;
+}
+.incorrect{
+    background: #ff9393;
+}
